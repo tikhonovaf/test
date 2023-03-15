@@ -9,7 +9,7 @@ public class IteratorEx1 {
         ArrayList<String> arrayList1 = new ArrayList<>();
         arrayList1.add("Zaur");
         arrayList1.add("Ivan");
-        arrayList1.add("Maria");
+        arrayList1.add("Maria21");
         System.out.println(arrayList1);
 
         Iterator<String> iterator = arrayList1.iterator();
