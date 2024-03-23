@@ -1,4 +1,4 @@
-package threaUdemy;
+package thread.archive;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -19,8 +19,8 @@ public class Increment {
             executor.submit(() -> {
 //                counter4++;
                 synchronized (counter4) {
-                    counter4++;
                     counter1++;
+                    counter2++;
                 }
 //                counter2++;
                 atomicInteger.incrementAndGet();

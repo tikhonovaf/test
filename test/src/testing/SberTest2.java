@@ -21,4 +21,8 @@ class Tiger  {
     }
 
 
+class BirdTiger {
+        Bird bird;
+    Tiger tiger;
+}
 }

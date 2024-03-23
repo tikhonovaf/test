@@ -1,15 +1,23 @@
-package threaUdemy;
+package thread.concurrent;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ThreadEx2 {
+public class ConcurrentHashMapExample {
 
     public static void main(String[] args) {
+        ArrayList<String> a =   new ArrayList<>(List.of("mark", "mike", "kate"));
+        ArrayList<Integer> ia =   new ArrayList<>(List.of(1, 2, 3));
+        List<String> a2 = Arrays.asList("1","2","3");
+        System.out.println("a2 =  " + a2);
+
         Thread myThread3 = new Thread(new MyThread3());
         Thread myThread4 = new Thread(new MyThread4());
-        myThread3.start();
-        myThread4.start();
+//        myThread3.start();
+//        myThread4.start();
         ConcurrentHashMap<Integer,String> chm = new ConcurrentHashMap<>();
         Runnable r = new Runnable() {
             @Override

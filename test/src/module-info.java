@@ -1,0 +1,3 @@
+module education {
+    requires lombok;
+}

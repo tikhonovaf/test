@@ -1,7 +1,8 @@
-package threaUdemy;
+package thread.ctreateThreadRunnable;
 
 
-public class ThreadEx3 {
+
+public class CreateThreadRunnableLambda {
 
     public static void main(String[] args) {
         new Thread(
@@ -18,9 +19,8 @@ public class ThreadEx3 {
                     }
                 }
         ).start();
-
     }
-}
 
+}
 
 

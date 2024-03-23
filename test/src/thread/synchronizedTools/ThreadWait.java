@@ -1,4 +1,4 @@
-package threaUdemy;
+package thread.synchronizedTools;
 
 public class ThreadWait {
 
