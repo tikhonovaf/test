@@ -1,4 +1,4 @@
-package testing;
+package temp.testing;
 
 // Java program to demonstrate
 // the concept of upcasting

@@ -1,4 +1,4 @@
-package testing;
+package temp.testing;
 
 // Class 2
 // Main class

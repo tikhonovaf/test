@@ -1,10 +1,10 @@
-package testing;
+package temp.testing;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class ArrayListEx1 {
+public class Test_2 {
     public static void main(String[] args) {
         String[][] array = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}};
 

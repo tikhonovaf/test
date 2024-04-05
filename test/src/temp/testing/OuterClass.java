@@ -1,4 +1,4 @@
-package testing;
+package temp.testing;
 
 // Java program to Demonstrate How to
 // Implement Static and Non-static Classes

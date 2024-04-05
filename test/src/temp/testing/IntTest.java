@@ -1,6 +1,4 @@
-package testing;
-
-import java.util.stream.Stream;
+package temp.testing;
 
 public class IntTest {
     public static void main(String[] args)

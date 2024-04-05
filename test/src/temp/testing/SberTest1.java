@@ -1,4 +1,4 @@
-package testing;
+package temp.testing;
 
 public class SberTest1 {
     public static void main(String[] args) {
