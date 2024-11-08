@@ -3,21 +3,15 @@ package collection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class ArrayListEx2 {
     public static void main(String[] args) {
-        StringBuilder sb1 = new StringBuilder("A");
-        StringBuilder sb2 = new StringBuilder("B");
-        StringBuilder sb3 = new StringBuilder("C");
-        StringBuilder sb4 = new StringBuilder("D");
-        StringBuilder [] la = {sb1, sb2, sb3, sb4};
-
-        List<StringBuilder> l1 = Arrays.asList(la);
-
-        System.out.println(l1);
-
-
-
-    }
-
+        String[] names = {"Java", "Kotlin", "Java"};
+        String name = "Java";
+        Predicate predicate = name::equals;
+        Stream.of(names).filter(predicate).count(); name = "Kotlin";
+        Stream.of(names).filter (predicate).count();    }
 }
+

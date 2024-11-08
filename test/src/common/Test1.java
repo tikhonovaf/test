@@ -17,10 +17,10 @@ class Test1 {
                 "Portal");
 
         // Print the stream
-        stream.forEach(
-                s -> System.out.println(s)
-        );
-//        stream.forEach(System.out::println);
+//        stream.forEach(
+//                s -> System.out.println(s)
+//        );
+        stream.forEach(System.out::println);
 
 
 

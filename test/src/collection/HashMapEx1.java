@@ -21,5 +21,15 @@ public class HashMapEx1 {
         System.out.println(map1.keySet());
         System.out.println(map1.values());
 
+        Boolean b = new Boolean("/true");
+
+        System.out.println(b);
+ int i = 5;
+ i = i++ + ++i;
+        System.out.println(i);
+
+
+
+
     }
 }
