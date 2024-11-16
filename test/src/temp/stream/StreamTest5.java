@@ -1,7 +1,4 @@
 package temp.stream;
-import temp.lambda.Faculty;
-import temp.lambda.Student;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

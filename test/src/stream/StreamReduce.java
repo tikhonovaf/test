@@ -1,9 +1,5 @@
 package stream;
 
-import temp.lambda.Faculty;
-import temp.lambda.Student;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,8 +8,7 @@ public class StreamReduce {
 
 //        System.out.println(e.getName())
         List<Integer> numbers = Arrays.asList(1, 2, 3);
-        int result = numbers
-                .stream()
+        int result = numbers.stream()
                 .reduce(4, Integer :: sum );
         System.out.println(result);
     }
