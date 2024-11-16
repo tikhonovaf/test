@@ -16,7 +16,7 @@ public class StreamSeq {
                     System.out.println("map: " + s1);
                     return s1.toUpperCase();
                 })
-
+//                .skip(1)
                 .forEach(x -> {
                     System.out.println("forEach: " + x);
                 });
