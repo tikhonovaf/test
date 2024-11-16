@@ -30,9 +30,9 @@ public class StreamArray {
 //                .toArray();
 //        System.out.println("toArray: " + ia);
 
-        var sum = Arrays.stream(ia)
+        var average = Arrays.stream(ia)
                 .average();
-        System.out.println("average: " + sum);
+        System.out.println("average: " + average);
 
 
 
