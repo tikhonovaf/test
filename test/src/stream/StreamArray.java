@@ -19,6 +19,8 @@ public class StreamArray {
 //                    return a + b;
 //                });
         int [] ia = new int [] {1,2,2,4,5};
+        String [] sa = {"kj", "lklklk"};
+
 ////        Arrays.stream(new int[]{1,2,2,4,5})
 //        Arrays.stream(ia)
 //                .forEach(x -> {
@@ -29,6 +31,8 @@ public class StreamArray {
 //        var res = Arrays.stream(ia)
 //                .toArray();
 //        System.out.println("toArray: " + ia);
+
+        var res = 129090909 & 15;
 
         var average = Arrays.stream(ia)
                 .average();
