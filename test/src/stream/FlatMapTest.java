@@ -12,18 +12,32 @@ public class FlatMapTest {
 
         Map<Integer, List<Long>> inputMap = new HashMap<>();
         inputMap.put(1, Arrays.asList(0L, 1L, 2L));
-        inputMap.put(2,Arrays.asList(3L,4L));
+        inputMap.put(2, Arrays.asList(3L, 4L));
 
         Map<Long, Integer> outputMap = inputMap.entrySet().stream()
                 .flatMap(entry -> {
                     System.out.println("entry  key " + entry.getKey());
                     var key = entry.getKey();
                     var value = entry.getValue();
-                    return value.stream().map(num -> Map.entry(num,key));
+                    return value.stream().map(num -> Map.entry(num, key));
                 })
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
         System.out.println(outputMap);
-    }
 
+
+        // Creating a List of Lists
+        List<List<String>> listOfLists = Arrays.asList(
+                Arrays.asList("Geeks", "For"),
+                Arrays.asList("GeeksForGeeks", "A computer portal"),
+                Arrays.asList("Java", "Programming")
+        );
+
+        // Using Stream flatMap(Function mapper)
+        listOfLists.stream()
+                .flatMap(list -> list.stream())
+                .forEach(System.out::println);
+    }
 }
+
+
