@@ -15,6 +15,11 @@ public class ArrayListEx1 {
 
         collect.forEach(v ->System.out.println(v));
 
+        String s1 = new String();
+        String s2 = new String();
+        s1.hashCode();
+
+
     }
 
 }
