@@ -2,9 +2,7 @@ package stream;
 
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class StreamSeq {
 
@@ -32,6 +30,8 @@ public class StreamSeq {
                 .findFirst();
 
         System.out.println("map: " + roomNum);
+
+        Set<String> set1 = new HashSet();
 
         final List<String> list = List.of("dog", "cat", "hamster");
         list.stream()
