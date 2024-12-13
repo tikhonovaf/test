@@ -1,9 +1,6 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class HashMapEx1 {
     public static void main(String[] args) {
@@ -21,7 +18,10 @@ public class HashMapEx1 {
         System.out.println(map1.keySet());
         System.out.println(map1.values());
 
-        Boolean b = new Boolean("/true");
+        Boolean b = true;
+
+        Set <String> set1 = new HashSet();
+        set1.add("gjgjg");
 
         System.out.println(b);
  int i = 5;
