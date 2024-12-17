@@ -8,6 +8,8 @@ public class GenericTest {
     public static void main(String[] args) {
         List< ? extends Fruit > fruitsExt = new ArrayList<>();
         List< ? super Fruit > fruitsSuper = new ArrayList<>();
+        List< Fruit > fruitsSuper2 = new ArrayList<>();
+
 
         fruitsSuper.add(new Fruit());
         fruitsSuper.add(new AppleExt());
