@@ -1,4 +1,4 @@
-package sobes.streamToMap;
+package sobes.streams.streamToMap;
 
 import java.time.LocalTime;
 import java.util.List;

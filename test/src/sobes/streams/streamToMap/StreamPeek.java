@@ -1,4 +1,4 @@
-package sobes;
+package sobes.streams.streamToMap;
 
 import java.util.stream.Stream;
 
