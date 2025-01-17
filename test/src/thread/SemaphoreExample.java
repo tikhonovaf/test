@@ -45,7 +45,7 @@ public class SemaphoreExample  extends Thread {
 
     public static void main(String[] args) {
 
-        Semaphore sem = new Semaphore(2);
+        Semaphore sem = new Semaphore(3);
         new SemaphoreExample(sem,"Сократ").start();
         new SemaphoreExample(sem,"Платон").start();
         new SemaphoreExample(sem,"Аристотель").start();

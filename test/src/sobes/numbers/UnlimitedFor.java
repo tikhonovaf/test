@@ -1,4 +1,4 @@
-package sobes;
+package sobes.numbers;
 
 public class UnlimitedFor {
     public static final int END = Integer.MAX_VALUE;

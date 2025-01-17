@@ -9,7 +9,7 @@ public class CreateThreadPool {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
 
         for (int i = 0; i < 30; i++) {
-//            executorService.execute(new Task(i));
+            executorService.execute(new Task(i));
             executorService.submit(new Task(i));
         }
 
