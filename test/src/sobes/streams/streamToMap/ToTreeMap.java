@@ -32,8 +32,7 @@ public class ToTreeMap {
     private static LocalTime findBestLap(List<RacerResult> racerResults) {
         return racerResults.stream()
                 .flatMap(s-> s.getLapTimes().stream())
-                .min(LocalTime::compareTo)
-                .get()
+                .min(LocalTime::compareTo).orElse(null)
                 ;
     }
 
@@ -42,7 +41,6 @@ public class ToTreeMap {
                 r -> r.getName(),
                 r -> r.getLapTimes().stream().min(LocalTime::compareTo),
                 (r1, r2 ) -> {throw new RuntimeException("Duplicates value");  },
-//                (r1, r2 ) -> ,
                 TreeMap::new
         ));
     }

@@ -4,6 +4,14 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Segments {
+
+    public static void main(String[] args) {
+        Segments solution = new Segments();
+        String s = "aaabdccc";
+        int k = 3;
+        System.out.println(solution.rearrangeString(s, k));  // Пример вывода: "abcabc"
+    }
+
     public String rearrangeString(String s, int k) {
         if (k == 0) {
             return s;
@@ -50,10 +58,4 @@ public class Segments {
         return result.length() == s.length() ? result.toString() : "";
     }
 
-    public static void main(String[] args) {
-        Segments solution = new Segments();
-        String s = "aaabdcccc";
-        int k = 3;
-        System.out.println(solution.rearrangeString(s, k));  // Пример вывода: "abcabc"
-    }
 }
