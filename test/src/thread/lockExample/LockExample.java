@@ -6,24 +6,26 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LockExample {
     public static void main(String[] args) throws InterruptedException {
         Call call = new Call();
-        Thread newThread1 = new Thread(
+        Thread newThreadMobileCall = new Thread(
                 () -> {
                     call.mobileCall();
                 }
         );
-        Thread newThread2 = new Thread(
+        Thread newThreadSkypeCall = new Thread(
                 () -> {
                     call.skypeCall();
                 }
         );
-        Thread newThread3 = new Thread(
+        Thread newThreadWhatsapCall = new Thread(
                 () -> {
                     call.whatsapCall();
                 }
         );
-        newThread1.start();
-        newThread2.start();
-        newThread3.start();
+        newThreadMobileCall.start();
+        newThreadSkypeCall.start();
+        newThreadWhatsapCall.start();
+
+//        newThreadSkypeCall.interrupt();
 
     }
 }
@@ -34,10 +36,12 @@ class Call {
     void mobileCall() {
         lock.lock();
         try {
-            System.out.println(("Mobile call starts"));
+//            lock.lock();
+            System.out.println(("Mobile call starts  " + Thread.currentThread().getName()));
             Thread.sleep(3000);
             System.out.println(("Mobile call ends"));
         } catch (InterruptedException e) {
+            System.out.println("Mobile call interrupted");
             e.printStackTrace();
         }
         finally {
@@ -52,6 +56,7 @@ class Call {
             Thread.sleep(3000);
             System.out.println(("whatsap call ends"));
         } catch (InterruptedException e) {
+            System.out.println("whatsap call interrupted");
             e.printStackTrace();
         }
         finally {
@@ -66,6 +71,7 @@ class Call {
             Thread.sleep(3000);
             System.out.println(("Skype call ends"));
         } catch (InterruptedException e) {
+            System.out.println("Skype call interrupted");
             e.printStackTrace();
         }
         finally {

@@ -1,4 +1,4 @@
-package thread.lockExample.lockExample;
+package thread.lockExample;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

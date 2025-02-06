@@ -10,7 +10,8 @@ import java.util.List;
 
 public class SortArrays {
     public static void main(String[] args) {
-        int[] arr1 = {1, 2, 3, 5};
+        int[] arr1 = {1, 2, 3, 5, 7};
+//        int[] arr2 = {2, 3, 4, 9, 11, 12, 15};
         int[] arr2 = {2, 3, 4};
         List<Integer> result = filter(arr1, arr2);
         System.out.println(result); // [1]
@@ -34,6 +35,14 @@ public class SortArrays {
             result.add(arr1[i]);
             i++;
         }
+        for (int j1 = j; j1 < arr2.length; j1++ )
+            result.add(arr2[j1]);
+
+//        while (j < arr2.length) {
+//            result.add(arr2[j]);
+//            j++;
+//        }
+
         return result;
     }
 }
