@@ -12,7 +12,8 @@ public class OrderAnalysis {
         return order.getProducts().stream()
                 .map(p -> p.getPrice() * p.getQuantity())
 //                .reduce(0.0, (sum, el) ->  sum + el);
-                .reduce(Double::sum).orElse(0.0);
+                .reduce(Double::sum)
+                .orElse(0.0);
     }
 
     // ѕолучить список наименований товаров из заказов
@@ -36,7 +37,7 @@ public class OrderAnalysis {
                .map(m -> m.getKey())
                .collect(Collectors.toList());
 
-       return null;
+       return s;
    }
 
 }

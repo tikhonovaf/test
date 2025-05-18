@@ -1,4 +1,4 @@
-package sobes;
+package sobes.collections;
 
 import java.util.Arrays;
 

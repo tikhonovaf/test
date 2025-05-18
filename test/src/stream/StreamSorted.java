@@ -1,13 +1,11 @@
-package sobes.streams;
-
-import sobes.streams.stream.flatMap1.Product;
+package stream;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class GroppingExample1 {
+public class StreamSorted {
+
     public static void main(String[] args) throws Exception {
 
         final List<String> addresses = new ArrayList<>();
@@ -21,10 +19,17 @@ public class GroppingExample1 {
 //                        .collect(Collectors.groupingBy(p -> p, Collectors.counting()))
                         .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                         .entrySet().stream()
-                        .max(Map.Entry.comparingByValue()) // Optional<Map.Entry<Integer, Foo>>
-                        .orElseThrow()
-                        .getKey();
+                        .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                        .collect(Collectors.toList());
 //        System.out.println(res.getKey() + "  " + res.getValue());
         System.out.println(res);
     }
+
+//
+//    var sortedBps = taskList.keySet().stream()
+//            .sorted(Comparator.comparing({ y -> y.getY() })
+//                    .thenComparing(Comparator.comparing({ x -> x.getX() })))
+//            .collect(Collectors.toList())
+
+
 }

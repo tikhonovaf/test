@@ -1,4 +1,4 @@
-package sobes;
+package sobes.common;
 
 public class MonotoneSeq {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package sobes;
+package sobes.common;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,7 @@ public class GenericTest {
         fruitsSuper.add(new AppleExt());
         fruitsSuper.add(new AppleExt());
         fruitsSuper.add(new AppleExt());
+        fruitsSuper.add(new Apple());
 
         fruitsSuper.get(0);
         fruitsExt.get(1);
