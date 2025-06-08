@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class OrderAnalysis {
-    // Рассчитать полную стоимость заказа
+    // Р Р°СЃСЃС‡РёС‚Р°С‚СЊ РїРѕР»РЅСѓСЋ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р°
     public static Double calculateOrderTotal(Order order) {
         return order.getProducts().stream()
                 .map(p -> p.getPrice() * p.getQuantity())
@@ -16,7 +16,7 @@ public class OrderAnalysis {
                 .orElse(0.0);
     }
 
-    // Получить список наименований товаров из заказов
+    // РџРѕР»СѓС‡РёС‚СЊ СЃРїРёСЃРѕРє РЅР°РёРјРµРЅРѕРІР°РЅРёР№ С‚РѕРІР°СЂРѕРІ РёР· Р·Р°РєР°Р·РѕРІ
     public Set<String> getUniqueProductNames(List<Order> orders) {
         return  orders.stream()
                 .flatMap(o -> o.getProducts().stream())
@@ -25,7 +25,7 @@ public class OrderAnalysis {
                 .collect(Collectors.toSet());
     }
 
-   //  Получить наименования N популярных продуктов
+   //  РџРѕР»СѓС‡РёС‚СЊ РЅР°РёРјРµРЅРѕРІР°РЅРёСЏ N РїРѕРїСѓР»СЏСЂРЅС‹С… РїСЂРѕРґСѓРєС‚РѕРІ
    public List<String> findMostPopularProducts(List<Order> orders, int topN) {
        var s =  orders.stream()
                .flatMap(o -> o.getProducts().stream())

@@ -4,7 +4,22 @@ import java.util.List;
 
 public class ExtractIPAddresses {
     public static void main(String[] args) {
-        String input = "0120050"; // Пример строки с цифрами
+        int a = 1;
+        int b = 2;
+        System.out.println(a | b);
+
+
+        int array[] = new int[0];
+
+        int[] array1 = new int[1];
+
+        int[] array2 = new int[1];
+
+        int[] array3 = new int[] {1, 2};
+
+        int[] array4 = {1, 2};
+
+        String input = "0120050"; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         List<String> ipAddresses = extractIPAddresses(input);
         for (String ip : ipAddresses) {
             System.out.println(ip);
