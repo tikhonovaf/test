@@ -3,6 +3,7 @@ package sobes.streams;
 import sobes.streams.stream.flatMap1.Product;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

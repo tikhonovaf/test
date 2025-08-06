@@ -4,10 +4,12 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class StringEquals {
+    ThreadLocal <String> threadLocal = new ThreadLocal<>();
+
     public static void main(String[] args) {
         String s1 = "aaa";
         String s2 = "aaa";
-        s2 = s2 + "λλλλ";
+        s2 = s2 + "Π»Π»Π»Π»";
         String s3 = new String("aaa");
         String s4 = new String("aaa").intern();
         String s5 = String.valueOf("aaa");
@@ -16,6 +18,7 @@ public class StringEquals {
         System.out.println((s1==s3));
         System.out.println((s1==s4));
         System.out.println((s1==s5));
+
 
     }
 }
